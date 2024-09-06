@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* -------------General------------------------- */
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+}
+.section-container {
+  text-align: center;
+  padding: 4rem 0;
+}
+.logo {
+  font-weight: bolder;
+  font-size: 2rem;
+  color: #06685c;
+}
+.glass {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.2px);
+  -webkit-backdrop-filter: blur(8.2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 2;
+  border: 1px;
+  border-radius: 20px;
+}
+.btn-primary {
+  color: white;
+  background-color: #24bdab;
+}
+
+.btn-secondary {
+  color: #24bdab;
+  background-color: white;
+  border: 2px solid #24bdab;
+}
+.btn-secondary:hover {
+  background-color: #24bdab;
+  color: white;
+}
+.section-header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* ------------------Navbar----------------------- */
+nav {
+  background-color: white;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  border-bottom: 1px solid rgba(57, 48, 48, 0.1);
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: darkslategray;
+  font-family: "ubuntu";
+  font-weight: 500;
+}
+nav a:hover {
+  color: #09d6bf;
+}
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+}
+
+/* -----------Hero section-------------------- */
+#hero-section {
+  position: relative;
+  background-image: url("/assests/images/heroBg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 80vh;
+  width: 100vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  text-align: center;
+  padding: 0 20px;
+  margin-top: 85px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+#hero-section h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  z-index: 2;
+}
+
+#hero-section h5 {
+  font-size: 1.2rem;
+  z-index: 2;
+  font-weight: lighter;
+}
+
+#hero-section button:hover {
+  background-color: #11a493;
+}
+
+@media (max-width: 768px) {
+  /* for tablets */
+  #hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  #hero-section h5 {
+    font-size: 1rem;
+  }
+
+  #hero-section button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero-section {
+    height: 60vh; /* smaller screens */
+  }
+
+  #hero-section h1 {
+    font-size: 2rem;
+  }
+
+  #hero-section h5 {
+    font-size: 0.9rem;
+  }
+
+  #hero-section button {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+}
+
+/* -----------------Feature section ----------------- */
+#feature-section {
+}
+.feature-box {
+  text-align: left;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.feature-box h4 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38.4px;
+  color: rgb(50, 219, 198);
+}
+.feature-box p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  color: rgb(77, 77, 77);
+}
+.feature-box ul li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(77, 77, 77);
+}
+.feature-box ul li::marker {
+  list-style: hotpink;
+}
+
+/* ---------------------Portfolio/ Our works--------------- */
+#portfolio-section {
+  background-color: #d9e6e5;
+}
+.works-text {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.work-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.work-box img {
+  object-fit: fill;
+  height: auto;
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.work-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.work-description p,
+.work-description h4 {
+  font-family: "ubuntu";
+  color: white;
+  text-align: center;
+}
+.work-description h4 {
+  font-size: 1.3rem;
+}
+.work-box:hover img {
+  opacity: 1;
+  transform: scale(1.1);
+  box-sizing: border-box;
+}
+.work-box:hover .work-description {
+  opacity: 0.9;
+}
