@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "ubuntu", sans-serif;
 }
 
 /* -------------General------------------------- */
@@ -253,14 +253,23 @@ nav a:hover {
   line-height: 27.2px;
   color: rgb(77, 77, 77);
 }
+.feature-box ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-top: 20px;
+  list-style-type: none;
+}
 .feature-box ul li {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: rgb(77, 77, 77);
 }
-.feature-box ul li::marker {
-  list-style: hotpink;
+.feature-box ul li span {
+  color: rgb(50, 219, 198);
+  font-weight: 900;
+  margin-right: 15px;
 }
 
 /* ---------------------Portfolio/ Our works--------------- */
