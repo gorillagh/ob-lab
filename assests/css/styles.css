@@ -4,6 +4,9 @@
   box-sizing: border-box;
   overflow-x: hidden;
 }
+a {
+  text-decoration: none;
+}
 
 body {
   font-family: "ubuntu", sans-serif;
@@ -674,4 +677,130 @@ textarea {
     width: 100%;
     text-align: center;
   }
+}
+
+/* ------------------Call to Action----------------------- */
+.cta-button {
+  padding: 3rem 0;
+  text-align: center;
+  width: 100%;
+  background-color: #09d6bf;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38.4px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border: none;
+}
+.cta-button:hover {
+  background-color: #06a38c;
+}
+
+/* -----------------Footer------------------------ */
+footer {
+  padding: 5rem 0 2rem 0;
+  background-color: #333333;
+  color: white;
+}
+footer container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  padding: 2rem 0;
+  margin-bottom: 5rem;
+}
+.footer-grid-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 0px 10px;
+  text-align: left;
+}
+.footer-about {
+  padding-right: 3rem;
+}
+.footer-grid-item h5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+  color: rgb(255, 255, 255);
+}
+.footer-grid-item p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  color: rgb(115, 115, 115);
+}
+.footer-grid-item a {
+  font-size: 16px;
+  font-weight: 400;
+  /* line-height: 27.2px; */
+  color: rgb(209, 200, 200);
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-grid-item a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.footer-grid-item i {
+}
+.footer-socials {
+  display: flex;
+  column-gap: 30px;
+}
+.footer-grid-item input {
+  border: 1px solid rgb(115, 115, 115);
+  margin: 0;
+  padding: 15px 15px;
+
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.news-letter-input {
+  border-radius: 20px;
+
+  display: flex;
+}
+.footer-grid-item input:focus {
+  border: none;
+}
+.news-letter-btn {
+  height: 100%;
+  border: none;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 0 20px;
+  background-color: #09d6bf;
+  cursor: pointer;
+  color: white;
+}
+.news-letter-btn:hover {
+  background-color: #06a38c;
+}
+.copyright {
+  border-top: 1px solid #333333;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgb(115, 115, 115);
+}
+.copyright p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  color: rgb(115, 115, 115);
+}
+.copyright i {
+  color: #f23a2e;
 }
