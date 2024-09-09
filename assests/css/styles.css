@@ -156,7 +156,7 @@ nav a:hover {
 /* -----------Hero section-------------------- */
 #hero-section {
   position: relative;
-  background-image: url("/assests/images/heroBg2.jpg");
+  background-image: url("https://res.cloudinary.com/gorillasystemsgh/image/upload/v1725898808/heroBg2_uxf1qy.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
