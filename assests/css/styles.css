@@ -156,7 +156,7 @@ nav a:hover {
 /* -----------Hero section-------------------- */
 #hero-section {
   position: relative;
-  background-image: url("/assests/images/heroBg2.jpg");
+  background-image: url("https://res.cloudinary.com/gorillasystemsgh/image/upload/v1725898808/heroBg2_uxf1qy.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -758,30 +758,30 @@ footer container {
   column-gap: 30px;
 }
 .footer-grid-item input {
-  border: 1px solid rgb(115, 115, 115);
   margin: 0;
   padding: 15px 15px;
-
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
+  background-color: transparent;
+  color: white;
+  border: none;
 }
-.news-letter-input {
-  border-radius: 20px;
-
+.newsletter-input {
   display: flex;
+  background-color: #333;
+  border: 1px solid rgb(115, 115, 115);
+  border-radius: 30px;
+  width: auto;
 }
 .footer-grid-item input:focus {
-  border: none;
+  outline: none;
 }
 .news-letter-btn {
   height: 100%;
+  width: 100%;
   border: none;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  padding: 0 20px;
   background-color: #09d6bf;
   cursor: pointer;
   color: white;
+  font-weight: 600;
 }
 .news-letter-btn:hover {
   background-color: #06a38c;
